@@ -1,6 +1,99 @@
+*, body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 table {
   background-color: aliceblue;
   font-size: 12px;
   width: 100%;
 }
 
+ul, ol {
+  list-style: none;
+}
+li {
+  margin: 5px 0;
+}
+
+.personal {
+  background-color: chocolate;
+  color: #fff;
+  text-align: center;
+}
+.personal h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  margin:0;
+  line-height: 1;
+}
+
+
+
+h2 {
+  font-size: 40px;
+  margin:0;
+}
+
+.interest {
+ background-color: rgba(red, green, blue, 86%); 
+}
+
+.content-wrap {
+  max-width: 990px;
+  width: 85%;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.work-experience {
+
+}
+
+
+
+
+footer {
+  background-color: #888;
+  color: beige;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer .content-wrap {
+  padding: 20px 0;
+}
+
+
+@media screen and (min-width:750px){
+  .work-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer ul li {
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media screen and (max-width:749px){
+  .personal h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
