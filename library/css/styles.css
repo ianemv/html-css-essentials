@@ -1,0 +1,38 @@
+*, body, html {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+header {
+	background-color: rgb(124, 25, 128);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+h1 {
+	color: #fff;
+	line-height: 1;
+
+}
+nav {
+	display: flex;
+	justify-content: center;	
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a, nav a:visited {
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
