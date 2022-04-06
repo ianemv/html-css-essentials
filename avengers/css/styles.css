@@ -36,3 +36,11 @@ nav a, nav a:visited {
 nav a:hover {
 	text-decoration: underline;
 }
+
+.main-wrapper {
+	max-width: 980px;
+  margin: 0 auto;
+}
+.main-wrapper div:first-child {
+	text-align: center;
+}
