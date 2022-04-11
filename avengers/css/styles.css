@@ -44,3 +44,28 @@ nav a:hover {
 .main-wrapper div:first-child {
 	text-align: center;
 }
+
+footer {
+	margin: 0 auto;
+	background-color: #00438d;
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+footer div {
+	max-width: 980px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+footer li {
+	padding: 15px;
+}
+
+.text-center {
+	text-align: center;
+}
