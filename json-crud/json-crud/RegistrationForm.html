@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <meta name="keywords" content="Registration, Form, Course" />
+    <meta name="description"
+        content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='RegistrationForm.css' type='text/css' />
+    <script src="RegistrationForm.js"></script>
+    
+</head>
+
+<!-- Name, email, contact, course insterested, comments/ questions -->
+<body onload="document.registration.user_name.focus();">
+    <h1>Registration Form</h1>
+    
+    <form name='registration' onSubmit="return formValidation();">
+
+        <label for="user-name">Name:</label>
+        <input type="text" name="user_name" id="user_name" size="50" placeholder="Enter User Name here" required />
+        <br>
+        <label id="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male" checked /><span>Male</span>
+        <input type="radio" name="gender" value="Female" /><span>Female</span>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" size="50" placeholder="Enter your email here" required />
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" size="12" placeholder="Enter your password here" required />
+        <br>
+        <label for="contact">Contact:</label>
+        <input type="tel" name="contact" id="contact" size="8" placeholder="Enter your contact number here" required />
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" size="50" placeholder="Enter your Address here" />
+        <br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option selected="" value="Default">(Please select a country)</option>
+            <option value="AS">Australia</option>
+            <option value="CN">Canada</option>
+            <option value="IN">India</option>
+            <option value="SG">Singapore</option>
+            <option value="US">USA</option>
+        </select>
+        <br>
+        <label>Language:</label>
+        <input type="checkbox" name="langEN" id="langEN" value="en" checked /><span>English</span>
+        <input type="checkbox" name="langNonEN" id="langNonEN" value="non-en" /><span>Non English</span>
+        <br>
+        <label for="comments">comments:</label>
+        <textarea name="commnets" id="comments" rows="5" cols="50" placeholder="Enter your comments here"></textarea>
+        <br>
+        <input type="submit" name="submit" value="Submit" />
+
+    </form>
+</body>
+
+</html>
